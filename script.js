@@ -9,11 +9,11 @@ menu.onclick = () =>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
-/*
+
 document.addEventListener("contextmenu",function(freelanceNasim){
        freelanceNasim.preventDefault();
    });
-*/
+
 function showreading(){
        document.getElementById("info-box").style.display="none";
        document.getElementById("reading").style.display="inline";
@@ -487,3 +487,196 @@ function check4(){
               `
           
 } 
+function nextchapter(){
+       readingEl.innerHTML=`
+       <p>
+       The people had done it so many times that they only half listened to the directions; most of them were quiet, wetting their lips, not looking around. Then Mr. Summers raised one hand high and said, “Adams.” A man disengaged himself from the crowd and came forward. “Hi, Steve,” Mr. Summers said, and Mr. Adams said, “Hi, Joe.” They grinned at one another humorlessly and nervously. Then Mr. Adams reached into the black box and took out a folded paper. He held it firmly by one corner as he turned and went hastily back to his place in the crowd, where he stood a little apart from his family, not looking down at his hand.
+       </br></br>
+“Allen,” Mr. Summers said. “Anderson. . . . Bentham.”
+</br></br>
+“Seems like there’s no time at all between lotteries any more,” Mrs. Delacroix said to Mrs. Graves in the back row. “Seems like we got through with the last one only last week.”
+</br></br>
+“Time sure goes fast,” Mrs. Graves said.
+</br></br>
+“Clark. . . . Delacroix.”
+</br></br>
+“There goes my old man,” Mrs. Delacroix said. She held her breath while her husband went forward.
+</br></br>
+“Dunbar,” Mr. Summers said, and Mrs. Dunbar went steadily to the box while one of the women said, “Go on, Janey,” and another said, “There she goes.”
+</br></br>
+“We’re next,” Mrs. Graves said. She watched while Mr. Graves came around from the side of the box, greeted Mr. Summers gravely, and selected a slip of paper from the box. By now, all through the crowd there were men holding the small folded papers in their large hands, turning them over and over nervously. Mrs. Dunbar and her two sons stood together, Mrs. Dunbar holding the slip of paper.
+</br></br>
+“Harburt. . . . Hutchinson.”
+</br></br>
+“Get up there, Bill,” Mrs. Hutchinson said, and the people near her laughed.
+</br></br>
+“Jones.”
+</br></br>
+“They do say,” Mr. Adams said to Old Man Warner, who stood next to him, “that over in the north village they’re talking of giving up the lottery.”
+</br></br>
+Old Man Warner snorted. “Pack of crazy fools,” he said. “Listening to the young folks, nothing’s good enough for them. Next thing you know, they’ll be wanting to go back to living in caves, nobody work any more, live that way for a while. Used to be a saying about ‘Lottery in June, corn be heavy soon.’ First thing you know, we’d all be eating stewed chickweed and acorns. There’s always been a lottery,” he added petulantly. “Bad enough to see young Joe Summers up there joking with everybody.”
+</br></br>
+“Some places have already quit lotteries,” Mrs. Adams said.
+</br></br>
+“Nothing but trouble in that,” Old Man Warner said stoutly. “Pack of young fools.”
+</br></br>
+“Martin.” And Bobby Martin watched his father go forward. “Overdyke. . . . Percy.”
+</br></br>
+“I wish they’d hurry,” Mrs. Dunbar said to her older son. “I wish they’d hurry.”
+</br></br>
+“They’re almost through,” her son said.
+</br></br>
+“You get ready to run tell Dad,” Mrs. Dunbar said.
+</br></br>
+Mr. Summers called his own name and then stepped forward precisely and selected a slip from the box. Then he called, “Warner.”
+</br></br>
+“Seventy-seventh year I been in the lottery,” Old Man Warner said as he went through the crowd. “Seventy-seventh time.”
+</br></br>
+“Watson.” The tall boy came awkwardly through the crowd. Someone said, “Don’t be nervous, Jack,” and Mr. Summers said, “Take your time, son.”
+</br></br>
+“Zanini.”
+</br></br>
+After that, there was a long pause, a breathless pause, until Mr. Summers, holding his slip of paper in the air, said, “All right, fellows.” For a minute, no one moved, and then all the slips of paper were opened. Suddenly, all the women began to speak at once, saying, “Who is it?,” “Who’s got it?,” “Is it the Dunbars?,” “Is it the Watsons?” Then the voices began to say, “It’s Hutchinson. It’s Bill,” “Bill Hutchinson’s got it.”
+</br></br>
+“Go tell your father,” Mrs. Dunbar said to her older son.
+</br></br>
+People began to look around to see the Hutchinsons. Bill Hutchinson was standing quiet, staring down at the paper in his hand. Suddenly, Tessie Hutchinson shouted to Mr. Summers, “You didn’t give him time enough to take any paper he wanted. I saw you. It wasn’t fair!”
+</br></br>
+“Be a good sport, Tessie,” Mrs. Delacroix called, and Mrs. Graves said, “All of us took the same chance.”
+</br></br>
+“Shut up, Tessie,” Bill Hutchinson said.
+</br></br>
+“Well, everyone,” Mr. Summers said, “that was done pretty fast, and now we’ve got to be hurrying a little more to get done in time.” He consulted his next list. “Bill,” he said, “you draw for the Hutchinson family. You got any other households in the Hutchinsons?”
+</br></br>
+“There’s Don and Eva,” Mrs. Hutchinson yelled. “Make them take their chance!”
+</br></br>
+“Daughters draw with their husbands’ families, Tessie,” Mr. Summers said gently. “You know that as well as anyone else.”
+</br></br>
+“It wasn’t fair,” Tessie said.
+</br></br>
+“I guess not, Joe,” Bill Hutchinson said regretfully. “My daughter draws with her husband’s family, that’s only fair. And I’ve got no other family except the kids.”
+</br></br>
+“Then, as far as drawing for families is concerned, it’s you,” Mr. Summers said in explanation, “and as far as drawing for households is concerned, that’s you, too. Right?”
+</br></br>
+“Right,” Bill Hutchinson said.
+</br></br>
+“How many kids, Bill?” Mr. Summers asked formally.
+</br></br>
+“Three,” Bill Hutchinson said. “There’s Bill, Jr., and Nancy, and little Dave. And Tessie and me.”
+</br></br>
+“All right, then,” Mr. Summers said. “Harry, you got their tickets back?”
+</br></br>
+Mr. Graves nodded and held up the slips of paper. “Put them in the box, then,” Mr. Summers directed. “Take Bill’s and put it in.”
+</br></br>
+“I think we ought to start over,” Mrs. Hutchinson said, as quietly as she could. “I tell you it wasn’t fair. You didn’t give him time enough to choose. _Every_body saw that.”
+</br></br>
+
+       </p>
+       <button onclick="nextchapter1()" id="ready">Ready</button>
+         `
+}
+function nextchapter1(){
+       readingEl.innerHTML=`
+       <p>
+Mr. Graves had selected the five slips and put them in the box, and he dropped all the papers but those onto the ground, where the breeze caught them and lifted them off.
+</br></br>
+“Listen, everybody,” Mrs. Hutchinson was saying to the people around her.
+</br></br>
+“Ready, Bill?” Mr. Summers asked, and Bill Hutchinson, with one quick glance around at his wife and children, nodded.
+</br></br>
+“Remember,” Mr. Summers said, “take the slips and keep them folded until each person has taken one. Harry, you help little Dave.” Mr. Graves took the hand of the little boy, who came willingly with him up to the box. “Take a paper out of the box, Davy,” Mr. Summers said. Davy put his hand into the box and laughed. “Take just one paper,” Mr. Summers said. “Harry, you hold it for him.” Mr. Graves took the child’s hand and removed the folded paper from the tight fist and held it while little Dave stood next to him and looked up at him wonderingly.
+</br></br>
+“Nancy next,” Mr. Summers said. Nancy was twelve, and her school friends breathed heavily as she went forward, switching her skirt, and took a slip daintily from the box. “Bill, Jr.,” Mr. Summers said, and Billy, his face red and his feet overlarge, nearly knocked the box over as he got a paper out. “Tessie,” Mr. Summers said. She hesitated for a minute, looking around defiantly, and then set her lips and went up to the box. She snatched a paper out and held it behind her.
+</br></br>
+“Bill,” Mr. Summers said, and Bill Hutchinson reached into the box and felt around, bringing his hand out at last with the slip of paper in it.
+</br></br>
+The crowd was quiet. A girl whispered, “I hope it’s not Nancy,” and the sound of the whisper reached the edges of the crowd.
+</br></br>
+“It’s not the way it used to be,” Old Man Warner said clearly. “People ain’t the way they used to be.”
+</br></br>
+“All right,” Mr. Summers said. “Open the papers. Harry, you open little Dave’s.”
+</br></br>
+Mr. Graves opened the slip of paper and there was a general sigh through the crowd as he held it up and everyone could see that it was blank. Nancy and Bill, Jr., opened theirs at the same time, and both beamed and laughed, turning around to the crowd and holding their slips of paper above their heads.
+</br></br>
+“Tessie,” Mr. Summers said. There was a pause, and then Mr. Summers looked at Bill Hutchinson, and Bill unfolded his paper and showed it. It was blank.
+</br></br>
+“It’s Tessie,” Mr. Summers said, and his voice was hushed. “Show us her paper, Bill.”
+</br></br>
+Bill Hutchinson went over to his wife and forced the slip of paper out of her hand. It had a black spot on it, the black spot Mr. Summers had made the night before with the heavy pencil in the coal-company office. Bill Hutchinson held it up, and there was a stir in the crowd.
+</br></br>
+“All right, folks,” Mr. Summers said. “Let’s finish quickly.”
+</br></br>
+Although the villagers had forgotten the ritual and lost the original black box, they still remembered to use stones. The pile of stones the boys had made earlier was ready; there were stones on the ground with the blowing scraps of paper that had come out of the box. Mrs. Delacroix selected a stone so large she had to pick it up with both hands and turned to Mrs. Dunbar. “Come on,” she said. “Hurry up.”
+</br></br>
+Mrs. Dunbar had small stones in both hands, and she said, gasping for breath. “I can’t run at all. You’ll have to go ahead and I’ll catch up with you.”
+</br></br>
+The children had stones already, and someone gave little Davy Hutchinson a few pebbles.
+</br></br>
+Tessie Hutchinson was in the center of a cleared space by now, and she held her hands out desperately as the villagers moved in on her. “It isn’t fair,” she said. A stone hit her on the side of the head.
+</br></br>
+Old Man Warner was saying, “Come on, come on, everyone.” Steve Adams was in the front of the crowd of villagers, with Mrs. Graves beside him.
+</br></br>
+“It isn’t fair, it isn’t right,” Mrs. Hutchinson screamed, and then they were upon her. ♦
+</br></br>
+       </p>
+       <button onclick="questioner5()" id="ready">Ready</button>
+       `
+}
+function questioner5(){
+       readingEl.innerHTML= `
+       <form name="quiz5" id="quiz5">
+       <ul>
+       <div id="class">1.What can be seen on the slip of the paper of the winner of the lottery?? 
+       <li> <input type="radio" name="questiona1" value="nothingy">A.nothing</li>
+       <li> <input type="radio" name="questiona1" value=" red x">B.red x</li>
+       <li><input type="radio" name="questiona1" value="black spot">C.black spot</li>
+       <li><input type="radio" name="questiona1" value=" orange square">D. orange square</li>
+       </div>
+       <div id="class">2.What is Old Man Warner’s reaction upon hearing that other towns have either given up the lottery or are considering doing so?? 
+              <li> <input type="radio" name="questiona2" value="He laughs">A.He laughs</li>
+              <li> <input type="radio" name="questiona2" value=" He says its a good idea">B. He says its a good idea</li>
+              <li><input type="radio" name="questiona2" value="He begins to weep">C.He begins to weep</li>
+              <li><input type="radio" name="questiona2" value="He says it will lead to nothing but trouble">D.He says it will lead to nothing but trouble</li>
+       </div>          
+      <div id="class">3.At the end of the story, who wins the lottery??
+             <li><input type="radio" name="questiona3" value="Bill">A.Bill</li>
+             <li><input type="radio" name="questiona3" value="Nancy">B.Nancy</li>
+             <li><input type="radio" name="questiona3" value="Bill Jr">C.Bill Jr</li>
+             <li><input type="radio" name="questiona3" value="Tessie">D.Tessie</li>
+       </div>          
+      <div id="class">4. How does the mood change throughout the story??
+             <li><input type="radio" name="questiona4" value="The author begins with calmness and tranquility, but she ultimately shifts the reader to shock and confusion.">A.The author begins with calmness and tranquility, but she ultimately shifts the reader to shock and confusion.</li>
+             <li><input type="radio" name="questiona4" value=" BIt does not change">B. It does not change</li>
+             <li><input type="radio" name="questiona4" value="The author begins with shock and horror, and then she shifts to calmness and peacefulness">C. The author begins with shock and horror, and then she shifts to calmness and peacefulness</li>
+             <li><input type="radio" name="questiona4" value="The author begins with mourning and sadness, and then she shifts to happiness and joy.">D.The author begins with mourning and sadness, and then she shifts to happiness and joy.</li>
+       </div>
+      <div id="class">5.What may be one theme of “The Lottery”??
+             <li><input type="radio" name="questiona5" value="Sticks and stones may break my bones, but lotteries will never hurt me.">A.Sticks and stones may break my bones, but lotteries will never hurt me.</li>
+             <li><input type="radio" name="questiona5" value="All women must draw first as heads of their households on behalf of their families">B.All women must draw first as heads of their households on behalf of their families </li>
+             <li><input type="radio" name="questiona5" value="Lotteries are always in the best interests of everyone involved.">C.Lotteries are always in the best interests of everyone involved.</li>
+             <li><input type="radio" name="questiona5" value="Evil can be cloaked in something that seems to be good.">D.Evil can be cloaked in something that seems to be good.</li>
+       </div> 
+       </ul>
+       </br></br>
+<button id="ready" onclick="check5()">Done </button> `
+}
+function check5(){
+       var c=0;
+       var q1=document.quiz5.questiona1.value;
+       var q2=document.quiz5.questiona2.value;
+       var q3=document.quiz5.questiona3.value;
+       var q4=document.quiz5.questiona4.value;
+       var q5=document.quiz5.questiona5.value;
+       if (q1=="black spot") {c++}
+       if (q2=="He says it will lead to nothing but trouble") {c++}
+       if (q3=="Tessie") {c++}
+       if (q4=="The author begins with calmness and tranquility, but she ultimately shifts the reader to shock and confusion.") {c++}
+       if (q5=="Evil can be cloaked in something that seems to be good.") {c++}
+       quiz5.innerHTML = `
+       <div class="result">
+       <h2>You answered ${c} questions correctly</h2>
+
+       <a href="index.html" class="Home">Done</a> 
+       </div>
+              `
+}
