@@ -49,11 +49,11 @@ menu.onclick = () =>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
-
+/*
 document.addEventListener("contextmenu",function(freelanceNasim){
        freelanceNasim.preventDefault();
    });
-
+*/
 function showreading(){
        document.getElementById("info-box").style.display="none";
        document.getElementById("reading").style.display="inline";
