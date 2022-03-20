@@ -3,6 +3,46 @@ let navbar = document.querySelector('.navbar');
 let  readingEl=document.getElementById("reading")
 let quizEl=document.getElementById("quiz")
 let infoBox=document.getElementById("info-box");
+let darkMood=document.getElementById("darkmood");
+
+
+darkMood.onclick = function(){
+       if(localStorage.getItem("them")==null){
+       }
+
+
+     document.body.classList.toggle("dark-them");
+     if(document.body.classList.contains("dark-them")){
+       darkMood.src="fas fa-sun";
+       localStorage.setItem("them","dark");
+     }else{
+        darkMood.src="fas fa-moon";
+        localStorage.setItem("them","light");
+     }
+}
+if(localStorage.getItem("them")==null){
+  localStorage.setItem("them", "light");     
+}
+
+
+let localData= localStorage.getItem("them");
+if(localData=="light"){
+       darkMood.src="fas fa-sun"
+       document.body.classList.remove("dark-them");
+       
+}else if(localData=="dark"){
+       darkMood.src="fas fa-sun";
+       document.body.classList.add("dark-them");
+}
+
+
+
+
+
+
+
+
+
 
 
 menu.onclick = () =>{
@@ -73,7 +113,7 @@ function check(){
     if (q5=="Don't Chase Happiness. Enjoy Your Life") {c++}
     quiz.innerHTML = `
     <div class="result">
-           <h2>You answered ${c} questions correctly</h2>
+           <h2>You answered ${c}/5 questions correctly</h2>
 
            <a href="index.html" class="Home">Done</a> 
     </div>
@@ -84,6 +124,7 @@ function check(){
 function questioner1(){
        readingEl.innerHTML= `
        <form name="quiz1" id="quiz1">
+       <i id="darkmood"class="fas fa-moon"></i>
        <ul>
        <div id="class">1.What was the name of the cow? 
        <li> <input type="radio" name="questiona1" value="Magic.">A.  Magic</li>
@@ -133,7 +174,7 @@ function check1(){
        if (q4=="Broiled On Toast and Grind  His Bones ") {c++}
        if (q5=="Hi bought back Old Bessy") {c++}
        quiz1.innerHTML = `
-       <h2>You answered ${c} questions correctly</h2>
+       <h2>You answered ${c}/5 questions correctly</h2>
    
        <a href="index.html" class="Home">Done</a>
        `
@@ -363,7 +404,7 @@ function check2(){
        if (q4=="The paw granted 3 wishes.") {c++}
        if (q5=="silent blame") {c++}
        quiz2.innerHTML = `
-              <h2>You answered ${c} questions correctly</h2>
+              <h2>You answered ${c}/5 questions correctly</h2>
    
               <a href="index.html" class="Home">Done</a>
               `
@@ -422,7 +463,7 @@ function check3(){
        if (q4=="Don Pedro") {c++}
        if (q5=="Don Juan") {c++}
        quiz3.innerHTML = `
-       <h2>You answered ${c} questions correctly</h2>
+       <h2>You answered ${c}/5 questions correctly</h2>
           
        <a href="index.html" class="Home">Done</a>
               `
@@ -480,7 +521,7 @@ function check4(){
        if (q5=="he would not allow the children") {c++}
        quiz4.innerHTML = `
        <div class="result">
-       <h2>You answered ${c} questions correctly</h2>
+       <h2>You answered ${c}/5 questions correctly</h2>
 
        <a href="index.html" class="Home">Done</a> 
        </div>
@@ -674,7 +715,7 @@ function check5(){
        if (q5=="Evil can be cloaked in something that seems to be good.") {c++}
        quiz5.innerHTML = `
        <div class="result">
-       <h2>You answered ${c} questions correctly</h2>
+       <h2>You answered ${c}/5 questions correctly</h2>
 
        <a href="index.html" class="Home">Done</a> 
        </div>
