@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --main-color:#443;
     --border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
     --border-radius-hover:4% 95% 6% 95%/95% 4% 92% 5%;
     --border:.2rem solid var(--main-color);
     --border-hover:.2rem dashed var(--main-color);
+    --primary-color:#edf2fc;
+    --secondary-color:#212121;
+}
+
+
+.dark-them{
+background-color:black;
+--primary-color:#121212;
+--secondary-color:#fff;
+color: white;
 }
 
 *{
@@ -16,17 +25,21 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: all .2s linear;
-    
+     
 }
 
 html{
-
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth; 
 }
 
+#darkmood{
+    font-size: 30px;
+    cursor: pointer;
+
+}
 
 
 .header{
@@ -37,15 +50,15 @@ html{
     justify-content: space-between;
     z-index: 1000;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    background: linear-gradient(-45deg, #0c1d7b 10%,#ff0303);
+    background: rgb(174, 112, 112);
     padding:2rem 9%;
 }
 
 .header .logo{
-    color:rgb(255, 255, 255);
+    color:var(--primary-color);
     font-size: 2.7rem;
     display:absolute;
-    font-weight: bold;
+    font-weight: bolder;
     
 }
 
@@ -57,14 +70,15 @@ html{
 
 .header .navbar a{
     margin:0 1rem;
-    font-size: 1.7rem;
-    color:white;
+    font-size: 2.0rem;
+    color:var(--primary-color);
+    font-weight: bolder;
     
     
 }
 #menu-btn{
     font-size: 3rem;
-    color:var(black);
+    color:var( --secondary-color);
     cursor: pointer;
     display: none;
     
@@ -89,6 +103,9 @@ ul li{
     padding:0;
     margin: 1rem;
     text-align: center;
+    background-color: rgba(9, 219, 72, 0.402);
+    border:1px solid var(--secondary-color);
+    border-radius:2px;
 }
 
 .feature figure img{
@@ -97,11 +114,15 @@ ul li{
     width:150px;
     height: 225px;
     opacity: 100%;
-}  
+    background-color:none;
+}
 .feature figure img:hover{
     opacity: 40%;
+    background-color:none;
+
 }
 .feature figure figcaption{
+    color:var(--secondary-color);
     padding:0;
     margin:0;
     font-weight:bold;
@@ -110,13 +131,13 @@ ul li{
 
 .easy{
     background-color: rgb(27, 212, 104);
-    color:black;
+    color:var( --secondary-color);
     border-radius: 5px;
 
 }
 .hard{
     background-color: red;
-    color:black;
+    color:var( --secondary-color);
     border-radius: 5px;
 }
 #reading{
@@ -127,7 +148,7 @@ ul li{
     left: 150px;
     border-radius: 30px;
     box-shadow: 0 0 20px #0000001f;
-    background-color: rgb(243, 243, 243);
+    background-color:var(--primary-color);
     border: solid;
     display: none;
 }
@@ -156,7 +177,7 @@ h1{
 }
 #ready{
     background-color: #03cae4;
-    color: #fff;
+    color: var(--primary-color);
     border-radius: 1px 1px 30px 30px;
     display: block;
     width: 100%;
@@ -186,7 +207,7 @@ h2{
     text-align: center;
     display:inline-block;
     background-color:#03cae4;
-    color:rgb(255, 255, 255);
+    color:var(--primary-color);
     font-size: 30px;
     position:absolute;
     top: 68%;
@@ -213,7 +234,7 @@ h2{
     left:50%;
     transform:translate(-50%, -50%);
     font-size: 20px;
-    background-color:rgb(236, 231, 231);
+    background-color:var(--primary-color);
     border:solid;
     width:50%;
     display:inline;
@@ -249,7 +270,7 @@ h2{
     background-color:red;
     font-weight:bold;
     font-size: 30px;
-    color: white;
+    color: var(--primary-color);
  }
 
 
@@ -271,12 +292,16 @@ h2{
 
 
 @media(max-width:720px){
+    .header .logo i{
+        display:none;
+        
+    }
     #reading{
         margin: 0;
         padding:0;
         width: 100%;
         box-shadow: 0 0 20px #0000001f;
-        background-color: rgb(254, 254, 254);
+        background-color:var(--primary-color);
         border-radius: 0rem;
         position: absolute;
         left: 0px;
@@ -299,7 +324,7 @@ h2{
     }
     #ready{
     background-color: #03cae4;
-    color: #fff;
+    color: var(--primary-color);
     padding:0;
     margin:0;
     border-radius: 0.1rem;
@@ -320,7 +345,7 @@ h2{
         text-align: center;
         display:inline-block;
         background-color:#03cae4;
-        color:rgb(255, 255, 255);
+        color:var(--primary-color);
         position:absolute;
         top: 17rem;
         width: 100%;
@@ -335,7 +360,7 @@ h2{
     .header .navbar{
         position: absolute;
         top:80%; left:0; right:0;
-        background:rgb(0, 0, 0);
+        background:rgb(253, 0, 0);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
@@ -372,14 +397,14 @@ h2{
    }  
    .easy{
     background-color: rgb(27, 212, 104);
-    color:black;
+    color:var(--secondary-color);
 
     padding:0;
     margin:0;
    }
     .hard{
     background-color: red;
-    color:black;
+    color:var(--secondary-color);
     padding:0;
     margin:0;
     color: white;
@@ -399,7 +424,7 @@ h2{
    .info-box{
     margin-top: 6rem;
     font-size: 2rem;
-    background-color:rgb(236, 231, 231);
+    background-color:var(--primary-color);
     border:solid;
     width:100%;
     border-radius: 1rem;
