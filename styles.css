@@ -37,6 +37,7 @@ dialog p{
 span{
     float: right;
     font-size: 3rem;
+     cursor: pointer;
 }
 .dark-them{
 background-color:#121212;
