@@ -23,6 +23,9 @@ let lottory =document.getElementById("lottory");
 let dialog5 =document.getElementById("dialog5");
 let span5 =document.getElementById("span5");
 
+document.addEventListener("contextmenu",function(freelanceNasim){
+       freelanceNasim.preventDefault();
+   });
 
 menu.onclick = () =>{
        menu.classList.toggle('fa-times');
@@ -104,9 +107,7 @@ span5.onclick= function(){
 
 
 
-document.addEventListener("contextmenu",function(freelanceNasim){
-       freelanceNasim.preventDefault();
-   });
+
 
 function questioner(){
        readingEl.innerHTML= `
