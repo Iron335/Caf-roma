@@ -103,11 +103,11 @@ span5.onclick= function(){
 
 
 
-/*
+
 document.addEventListener("contextmenu",function(freelanceNasim){
        freelanceNasim.preventDefault();
    });
-*/
+
 function questioner(){
        readingEl.innerHTML= `
     <form name="quiz" id="quiz">
